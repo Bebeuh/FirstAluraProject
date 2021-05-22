@@ -1,3 +1,74 @@
 #banner {
     width: 20%;
 }
+header {
+    background: #363636;
+    padding: 20px 0;
+}
+.caixa {
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: none;
+}
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#vinigay {
+    width: 300px;
+    height: 300px;
+}
+
+#ddd11 {
+    width: 300px;
+    height: 300px;
+}
+
+#askout {
+    width: 300px;
+    height: 300px;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}

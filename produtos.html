@@ -3,18 +3,42 @@
   <head>
     <meta charset="UTF-8">
     <title>Produtos - Barbearia Alura</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="produtos.css">
   </head>
 
   <body>
     <header>
+      <div class="caixa">
       <h1><img id="banner" src="B%20Logo%20white.png"></h1>
-      <ul>
-          <li>Home</li>
-          <li>Produtos</li>
-          <li>Contato</li>
-      </ul>
+        <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li> <a href="contato.hml">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
+    <main>
+      <ul class="produtos">
+        <li><h2>ViniGay</h2>
+          <img id="vinigay" src="ViniGay.jpg">
+          <p class="produto-descricao">Cearense rico. Vai bancar a vida de luxo que você tanto quer</p>
+          <p class="produto-preco">R$ 1320,00</p>
+        </li>
+        <li><h2>DDD11</h2>
+          <img id="ddd11" src="DDD11.jpg">
+          <p class="produto-descricao">Famoso Paulista. Vai te levar para todos os bailes da D17</p>
+          <p class="produto-preco">R$ 870,00</p>
+        </li>
+        <li><h2>Askout</h2>
+          <img id="askout" src="Askout.jpg">
+          <p class="produto-descricao">Roubará os dados de quem você quiser. Trabalha no SUS</p>
+          <p class="produto-preco">R$ 2700,00</p>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
