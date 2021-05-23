@@ -1,15 +1,18 @@
 #banner {
     width: 20%;
 }
+
 header {
     background: #363636;
     padding: 20px 0;
 }
+
 .caixa {
     position: relative;
     width: 1024px;
     margin: 0 auto;
 }
+
 nav {
     position: absolute;
     top: 110px;
@@ -28,11 +31,18 @@ nav a {
     font-size: 28px;
     text-decoration: none;
 }
+
+nav a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 .produtos {
     width: 940px;
     margin: 0 auto;
     padding: 50px 0;
 }
+
 .produtos li {
     display: inline-block;
     text-align: center;
@@ -41,6 +51,20 @@ nav a {
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
+    border: 2px solid #363636;
+    border-radius: 20px;
+}
+
+.produtos li:hover {
+    border-color: yellow;
+}
+
+.produtos li:active {
+    border-color: green;
+}
+
+.produtos li:hover h2 {
+    font-size: 35px;
 }
 
 .produtos h2 {
@@ -49,26 +73,46 @@ nav a {
 }
 
 #vinigay {
-    width: 300px;
-    height: 300px;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
 }
 
 #ddd11 {
-    width: 300px;
-    height: 300px;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
 }
 
 #askout {
-    width: 300px;
-    height: 300px;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
 }
 
 .produto-descricao {
     font-size: 18px;
+    margin-top: 10px;
 }
 
 .produto-preco {
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #363636;
+    padding: 40px 0;
+}
+
+#footer {
+    width: 10%;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px;
 }
