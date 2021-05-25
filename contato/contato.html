@@ -1,0 +1,111 @@
+<!--Define that the document is HTML-->
+<!DOCTYPE html>
+
+<!--The <html> has as function of starting the html project code. Therefore you need to start your main code with <html> and end
+he with </html>.-->
+<!--The "lang" has the function of determining the language of the web.-->
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+
+<!--The <head> has the function of synchronizing your html with the stylesheet, to define a charset, the title and other things.
+In short, the head is a configuration about how your code will be in general.-->
+<head>
+
+    <!--The charset has the function of determining witch UTF will be used in your HTML project. We generally use UTF-8 to represent the Latin language.-->
+    <meta charset="UTF-8">
+
+    <!--The <title> has the function of determining whitch word will appear in the browser tab.-->
+    <title>Contato - Barbearia Alura</title>
+
+    <!--This part has the function of synchronizing your html with the stylesheet.-->
+    <link rel="stylesheet" href="../reset/reset.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<!--The <body> has the function of characterizing the html page with the main codings and functions.-->
+<body>
+
+<!--The function of <header> is to show the first part of the page.-->
+<header>
+
+    <!--The <div> is a division on the page.-->
+    <div class="caixa">
+
+        <!--The <h1> to <h6> tags are used to define HTML headings. <h1> defines the most important heading. <h6> defines the least important heading.
+        Note: Only use one <h1> per page - this should represent the main heading/subject for the whole page. Also, do not skip heading levels - start with <h1>, then use <h2>, and so on.-->
+        <!--The <img> has the function of put an image on the web-->
+        <h1><img id="banner" src="../produtosimage/B%20Logo%20white.png" alt="Logo"></h1>
+
+        <!--The <nav> tag defines a set of navigation links.
+        Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links.-->
+        <nav>
+
+            <!--The <ul> tag defines an unordered (bulleted) list. Use the <ul> tag together with the <li> tag to create unordered lists.
+            The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical. The <li> tag is used to define each list item.-->
+            <ul>
+                <li><a href="../index/index.html">Home</a></li>
+                <li><a href="../produtos/produtos.html">Produtos</a></li>
+                <li><a href="../contato/contato.html">Contato</a></li>
+            </ul>
+
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <form>
+            <label for="nome-sobrenome">Nome e sobrenome</label>
+            <input type="text" id="nome-sobrenome" class="input-padrao" required placeholder="João da Silva">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required placeholder="Digite aqui sua mensagem"></textarea>
+
+            <fieldset>
+                <legend class="text" id="text">Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+
+            <table>
+                <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                        </thead>
+                <tbody>
+                        <tr>
+                            <td>Todos os dias</td>
+                            <td>00:00 AM - 00:00 AM</td>
+                        </tr>
+                    </tbody>
+            </table>
+        </form>
+    </main>
+
+    <!--The <footer> has the function of creating a footer on the page. In the footer, you can place your copyright.-->
+        <footer>
+            <img id="footer" src="../produtosimage/B%20Logo%20white.png" alt="Logo">
+            <p class="copyright">&copy; Copyright Bebs Products - 2021</p>
+        </footer>
+    </body>
+</html>
