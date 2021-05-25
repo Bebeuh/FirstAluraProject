@@ -1,9 +1,10 @@
-<!-- Define that the document is HTML-->
+<!--Define that the document is HTML-->
 <!DOCTYPE html>
 
 <!--The <html> has as function of starting the html project code. Therefore you need to start your main code with <html> and end
 he with </html>.-->
-<html>
+<!--The "lang" has the function of determining the language of the web.-->
+<html lang="pt-br">
 
 <!--The <head> has the function of synchronizing your html with the stylesheet, to define a charset, the title and other things.
 In short, the head is a configuration about how your code will be in general.-->
@@ -16,7 +17,7 @@ In short, the head is a configuration about how your code will be in general.-->
     <title>Produtos - Barbearia Alura</title>
 
     <!--This part has the function of synchronizing your html with the stylesheet.-->
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../reset/reset.css">
     <link rel="stylesheet" href="produtos.css">
   </head>
 
@@ -32,7 +33,7 @@ In short, the head is a configuration about how your code will be in general.-->
         <!--The <h1> to <h6> tags are used to define HTML headings. <h1> defines the most important heading. <h6> defines the least important heading.
         Note: Only use one <h1> per page - this should represent the main heading/subject for the whole page. Also, do not skip heading levels - start with <h1>, then use <h2>, and so on.-->
         <!--The <img> has the function of put an image on the web-->
-      <h1><img id="banner" src="B%20Logo%20white.png"></h1>
+      <h1><img id="banner" src="../produtosimage/B%20Logo%20white.png"></h1>
 
         <!--The <nav> tag defines a set of navigation links.
         Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links.-->
@@ -41,10 +42,11 @@ In short, the head is a configuration about how your code will be in general.-->
           <!--The <ul> tag defines an unordered (bulleted) list. Use the <ul> tag together with the <li> tag to create unordered lists.
           The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical. The <li> tag is used to define each list item.-->
           <ul>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="../index/index.html">Home</a></li>
               <li><a href="produtos.html">Produtos</a></li>
               <li> <a href="contato.hml">Contato</a></li>
           </ul>
+
         </nav>
       </div>
     </header>
@@ -54,28 +56,31 @@ In short, the head is a configuration about how your code will be in general.-->
     <main>
       <ul class="produtos">
         <li><h2>ViniGay</h2>
-          <img id="vinigay" src="ViniGay.jpg">
+          <img id="vinigay" src="../produtosimage/ViniGay.jpg">
 
           <!--The <p> represents a paragraph-->
           <p class="produto-descricao">Cearense rico. Vai bancar a vida de luxo que você tanto quer</p>
           <p class="produto-preco">R$ 1320,00</p>
         </li>
+
         <li><h2>DDD11</h2>
-          <img id="ddd11" src="DDD11.jpg">
+          <img id="ddd11" src="../produtosimage/DDD11.jpg">
           <p class="produto-descricao">Famoso Paulista. Vai te levar para todos os bailes da D17</p>
           <p class="produto-preco">R$ 870,00</p>
         </li>
+
         <li><h2>Askout</h2>
-          <img id="askout" src="Askout.jpg">
+          <img id="askout" src="../produtosimage/Askout.jpg">
           <p class="produto-descricao">Roubará os dados de quem você quiser. Trabalha no SUS</p>
           <p class="produto-preco">R$ 2700,00</p>
         </li>
+
       </ul>
     </main>
 
   <!--The <footer> has the function of creating a footer on the page. In the footer, you can place your copyright.-->
     <footer>
-        <img id="footer" src="B%20Logo%20white.png">
+        <img id="footer" src="../produtosimage/B%20Logo%20white.png">
         <p class="copyright">&copy; Copyright Bebs Products - 2021</p>
     </footer>
   </body>
