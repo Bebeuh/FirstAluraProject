@@ -163,10 +163,13 @@ form label, form legend {
     width: 50%;
 }
 
+
+/* The form checkbox is synchronizing with <label class="checkbox"> */
 .checkbox {
     margin: 20px 0;
 }
 
+/* The .enviar is synchronizing with <class="enviar"> */
 .enviar {
     width: 40%;
     padding: 15px 0;
@@ -180,30 +183,35 @@ form label, form legend {
     cursor: pointer;
 }
 
+/* The .enviar is synchronizing with <class="enviar"> */
 .enviar:hover {
     background: #272727;
 }
 
+/* The table is synchronizing with <table> */
 table {
     margin: 20px 0 40px;
 }
 
+/* The table is synchronizing with <thead> */
 thead {
     background: #363636;
     color: #FFFFFF;
     font-weight: bold;
 }
 
+/* The table is synchronizing with <td> and <th> */
 td, th {
     border: 1px solid #363636;
     padding: 8px 15px;
 }
 
-/* index.html css */
+/* The .banner is synchronizing with <class="banner"> */
 .banner {
     width: 100%;
 }
 
+/* The .titulo-principal is synchronizing with <class="titulo-principal"> */
 .titulo-principal {
     text-align: center;
     font-size: 2em;
@@ -211,6 +219,7 @@ td, th {
     clear: left;
 }
 
+/* The .principal is synchronizing with <class="principal"> */
 .principal {
     padding: 3em 0;
     background: #FEFEFE;
@@ -218,6 +227,7 @@ td, th {
     margin: 0 auto;
 }
 
+/* The .principal p is synchronizing with <class="principal"> + <p> */
 .principal p {
     margin: 0 0 1em;
 }
@@ -226,59 +236,71 @@ td, th {
     font-weight: bold;
 }
 
+/* The .principal em is synchronizing with <class="principal"> + <em> */
 .principal em {
     font-style: italic;
 }
 
+/* The .utensilios em is synchronizing with <class="utensilios"> */
 .utensilios {
     width: 120px;
     float: left;
     margin: 0 20px 20px 0;
 }
 
+/* The .mapa em is synchronizing with <class="mapa"> */
 .mapa {
     padding: 3em 0;
     background: linear-gradient(#FEFEFE, #888888);
 }
 
+/* The .mapa-conteudo em is synchronizing with <class="mapa"> */
 .mapa-conteudo {
     width: 940px;
     margin: 0 auto;
 }
 
+/* The .mapa p is synchronizing with <class="mapa"> + p */
 .mapa p { 
     margin: 0 0 2em;
     text-align: center;
 }
 
+/* The .beneficios is synchronizing with <class="beneficios"> */
 .beneficios {
     padding: 3em 0;
     background: #888888;
 }
 
+/* The .conteudo-beneficios is synchronizing with <class="conteudo-beneficios"> */
 .conteudo-beneficios{ 
     width: 640px;
     margin: 0 auto;
 }
 
+/* The .lista-beneficios is synchronizing with <class="lista-beneficios"> */
 .lista-beneficios {
     width: 40%;
     display: inline-block;
     vertical-align: top;
 }
 
+/* The .itens is synchronizing with <class="itens"> */
 .itens {
     line-height: 1.5;
 }
 
+/* The .itens:first-child is synchronizing with <class="itens"> + :first-child */
 .itens:first-child {
     font-weight: bold;
 }
 
+/* The .itens::before is synchronizing with <class="itens"> + ::before */
 .itens::before {
     content: "⚝  ";
 }
 
+/* The .imagem-beneficios is synchronizing with <class=".imagem-beneficios"> */
 .imagem-beneficios {
     width: 60%;
     opacity: 1;
@@ -286,15 +308,18 @@ td, th {
     box-shadow: 10px 10px 10px 0 #000000;
 }
 
+/* The .imagem-beneficios is synchronizing with <class=".imagem-beneficios"> + :hover */
 .imagem-beneficios:hover {
     opacity: 0.3;
 }
 
+/* The .video is synchronizing with <class=".video">  */
 .video {
     width: 560px;
     margin: 1em auto;
 }
 
+/* @media has the function of modifying the page resolution for mobile, tablet, ... */
 @media screen and (max-width: 480px) {
     .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
         width: auto;
