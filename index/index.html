@@ -13,11 +13,17 @@ In short, the head is a configuration about how your code will be in general.-->
         <!--The charset has the function of determining witch UTF will be used in your HTML project. We generally use UTF-8 to represent the Latin language.-->
         <meta charset="UTF-8">
 
+        <!--Adapt the site for mobile use-->
+        <meta name="viewport" content="width=device-width">
+
         <!--The <title> has the function of determining whitch word will appear in the browser tab.-->
         <title>Barbearia Alura</title>
 
         <!--This part has the function of synchronizing your html with the stylesheet.-->
-        <link rel="stylesheet" href="style-home.css">
+        <link rel="stylesheet" href="../reset/reset.css">
+        <link rel="stylesheet" href="../style/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        
     </head>
 
 <!--The <body> has the function of characterizing the html page with the main codings and functions.-->
@@ -26,17 +32,42 @@ In short, the head is a configuration about how your code will be in general.-->
     <!--The function of <header> is to show the first part of the page.-->
     <header>
 
-        <!--The <h1> to <h6> tags are used to define HTML headings. <h1> defines the most important heading. <h6> defines the least important heading.
-Note: Only use one <h1> per page - this should represent the main heading/subject for the whole page. Also, do not skip heading levels - start with <h1>, then use <h2>, and so on.-->
-            <h1 class="titulo-principal">Barbearia Alura</h1>
-        </header>
+        <!--The <div> is a division on the page.-->
+        <div class="caixa">
+
+            <!--The <h1> to <h6> tags are used to define HTML headings. <h1> defines the most important heading. <h6> defines the least important heading.
+            Note: Only use one <h1> per page - this should represent the main heading/subject for the whole page. Also, do not skip heading levels - start with <h1>, then use <h2>, and so on.-->
+            <!--The <img> has the function of put an image on the web-->
+            <h1><img id="banner" src="../produtosimage/B%20Logo%20white.png" alt="Logo"></h1>
+
+            <!--The <nav> tag defines a set of navigation links.
+            Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links.-->
+            <nav>
+
+                <!--The <ul> tag defines an unordered (bulleted) list. Use the <ul> tag together with the <li> tag to create unordered lists.
+                The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical. The <li> tag is used to define each list item.-->
+                <ul>
+                    <li><a href="../index/index.html">Home</a></li>
+                    <li><a href="../produtos/produtos.html">Produtos</a></li>
+                    <li><a href="../contato/contato.html">Contato</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
 
     <!--The <img> has the function of put an image on the web-->
-        <img id="banner" src="../indeximages/reforma-de-barbearia.jpg">
+        <img class="banner" src="../indeximages/barbearia-top.jpg">
+
+    <!--The <main> tag specifies the main content of a document. The content inside the <main> element should be unique to the document. It should not contain any
+content that is repeated across document such as sidebars, navigation links, copyright information, site logos and search forms.-->
+    <main>
 
     <!--The <div> is a division on the page.-->
-    <div class="principal">
-            <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
+    <section class="principal">
+            <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+
+            <img class=utensilios src="../indeximages/OIP.jpg" alt="Utensilios de barbeiro">
 
         <!--The <p> represents a paragraph-->
         <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para
@@ -48,21 +79,47 @@ Note: Only use one <h1> per page - this should represent the main heading/subjec
 
             <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda.
             O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-        </div>
+        </section>
 
-        <div class="beneficios">
-            <h3 class="titulo-centralizado">Benefícios</h3>
+        <section class="mapa">
+            <h3 class="titulo-principal">Nosso estabelecimento</h3>
+            <p>Nosso estabelecimento está localizado no coração da cidade.</p>
 
-            <!--The <ul> tag defines an unordered (bulleted) list. Use the <ul> tag together with the <li> tag to create unordered lists.
-         The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical. The <li> tag is used to define each list item.-->
-            <ul>
-                <li class="itens">Atendimento aos Clientes</li>
-                <li class="itens">Espaço diferenciado</li>
-                <li class="itens">Localização</li>
-                <li class="itens">Profissionais Qualificados</li>
-            </ul>
+            <div class="mapa-conteudo"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1087.307559112791
+            !2d-46.65946379104781!3d-23.55938707661403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s
+            0x0%3A0xd3c4569ad6b43981!2sClose%20Shave%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1622052593627!5m2!1spt
+            -BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
 
-            <img src="../indeximages/beneficios.jpg" class="imagembeneficios">
-        </div>
+        <section class="beneficios">
+            <h3 class="titulo-principal">Benefícios</h3>
+
+            <div class="conteudo-beneficios">
+
+                <!--The <ul> tag defines an unordered (bulleted) list. Use the <ul> tag together with the <li> tag to create unordered lists.
+            The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical. The <li> tag is used to define each list item.-->
+                <ul class="lista-beneficios">
+                    <li class="itens">Atendimento aos Clientes</li>
+                    <li class="itens">Espaço diferenciado</li>
+                    <li class="itens">Localização</li>
+                    <li class="itens">Profissionais Qualificados</li>
+                    <li class="itens">Pontualidade</li>
+                    <li class="itens">Limpeza</li>
+                </ul><img src="../indeximages/beneficios.jpg" class="imagem-beneficios">
+            </div>
+
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img id="footer" src="../produtosimage/B%20Logo%20white.png">
+        <p class="copyright">&copy; Copyright Bebs Products - 2021</p>
+    </footer>
     </body>
 </html>
